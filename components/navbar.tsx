@@ -42,11 +42,11 @@ export default function Navbar() {
   return (
     <header
       className={cn(
-        "fixed md:px-16 top-0 left-0 right-0 z-50 shadow-sm transition-transform duration-300 ease-in-out",
+        "fixed px-5 md:px-16 top-0 left-0 right-0 z-50 shadow-sm transition-transform duration-300 ease-in-out",
         isVisible ? "translate-y-0" : "-translate-y-full",
       )}
     >
-      <div className="container mx-auto py-4 flex items-center justify-between">
+      <div className="container py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
           <Logo />
