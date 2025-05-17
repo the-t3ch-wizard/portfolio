@@ -42,7 +42,7 @@ export default function Navbar() {
   return (
     <header
       className={cn(
-        "fixed px-5 md:px-16 top-0 left-0 right-0 z-50 shadow-sm transition-transform duration-300 ease-in-out",
+        "fixed px-5 md:px-16 top-0 left-0 right-0 z-50 shadow-sm transition-transform duration-300 ease-in-out bg-clip-padding backdrop-filter backdrop-blur-sm",
         isVisible ? "translate-y-0" : "-translate-y-full",
       )}
     >
