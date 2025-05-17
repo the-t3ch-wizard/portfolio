@@ -1,8 +1,6 @@
 "use client"
 
 import { useState } from "react";
-import { Separator } from "@/components/ui/separator";
-import Image from "next/image";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   Accordion,
@@ -10,7 +8,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { MagicCard } from "./ui/magic-card";
+import { MagicCard } from "@/components/ui/magic-card";
 
 const ExperienceSection = () => {
 
@@ -47,13 +45,13 @@ const ExperienceSection = () => {
   ]);
 
   return (
-    <section className="w-full h-[48rem] bg-background">
+    <section className="w-full bg-background flex flex-col gap-6 pt-6 pb-8">
 
-      <h3 className="text-2xl md:text-4xl py-6 px-6 md:px-16">
+      <h3 className="text-2xl md:text-4xl px-6 md:px-16">
         Experience
       </h3>
 
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col gap-1 md:px-10">
       <Accordion type="single" collapsible className="w-full">
       {
         experiences.map((experience, index) => (
@@ -70,16 +68,16 @@ const ExperienceSection = () => {
                       </Avatar>
                       <div className="flex flex-col gap-2">
                         <div>
-                          <h4 className="text-xl font-semibold md:text-2xl">
+                          <h4 className="text-lg font-semibold md:text-xl">
                             {experience.position}
                           </h4>
-                          <h5 className="text-sm font-medium md:text-lg">
+                          <h5 className="text-sm font-medium md:text-base">
                             {experience.company}
                             <span> - </span>
                             {experience.location}
                           </h5>
                         </div>
-                        <h6 className="text-sm md:text-lg">
+                        <h6 className="text-sm md:text-base">
                           {experience.duration.start} - {experience.duration.end}
                         </h6>
                       </div>
