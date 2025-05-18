@@ -207,7 +207,6 @@ const SkillSection = () => {
       </h3>
 
       <div className="flex flex-col gap-3 px-2 md:px-[6.5rem]">
-        {/* <div className="flex gap-3"> */}
         <Marquee gradient={false} pauseOnHover={true} speed={25}>
         {
           frontendSkills.map((skill, index) => (
@@ -229,7 +228,6 @@ const SkillSection = () => {
           ))
         }
         </Marquee>
-        {/* </div> */}
         <Marquee direction="right" gradient={false} pauseOnHover={true} speed={25}>
         {
           backendSkills.map((skill, index) => (

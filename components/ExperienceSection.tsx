@@ -90,9 +90,9 @@ const ExperienceSection = () => {
                 <div className="w-full flex flex-col gap-2">
                   {
                     experience.responsibilities.map((responsibility, index) => (
-                      <div className="flex gap-2">
+                      <div className="flex gap-2 items-center">
                         -
-                        <p key={index} className="text-primary/90 md:text-lg leading-5 md:leading-7">
+                        <p key={index} className="text-primary/90 md:text-base leading-5 md:leading-7">
                           {responsibility}
                         </p>
                       </div>
