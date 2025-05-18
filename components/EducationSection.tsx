@@ -24,7 +24,7 @@ const EducationSection = () => {
   return (
     <section className="w-full bg-background flex flex-col gap-6 pt-6 pb-8">
 
-      <h3 className="text-2xl md:text-4xl px-6 md:px-16">
+      <h3 className="text-2xl px-6 md:px-16">
         Education
       </h3>
 
