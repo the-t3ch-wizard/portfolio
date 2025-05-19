@@ -4,7 +4,6 @@ import Footer from "@/components/Footer";
 import GithubContributionSection from "@/components/GithubContributionSection";
 import HomeLandingSection from "@/components/HomeLandingSection";
 import SkillSection from "@/components/SkillSection";
-import { Github } from "lucide-react";
 
 export default function Home() {
   return (
@@ -20,6 +19,13 @@ export default function Home() {
 
       {/* skills section */}
       <SkillSection />
+      
+      {/* github contributions section */}
+      <GithubContributionSection />
+
+      {/* projects section */}
+
+      {/* contact section */}
 
       {/* footer */}
       <Footer />
