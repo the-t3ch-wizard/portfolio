@@ -1,13 +1,10 @@
-"use client"
-
-import { useState } from 'react'
 import { Badge } from './ui/badge';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/tooltip';
 import Marquee from "react-fast-marquee";
 
 const SkillSection = () => {
 
-  const [frontendSkills, setFrontendSkills] = useState([
+  const frontendSkills = [
     {
       label: "HTML",
       icon: <svg viewBox="0 0 128 128">
@@ -77,9 +74,9 @@ const SkillSection = () => {
       label: "Shadcn UI",
       icon: <></>
     },
-  ]);
+  ];
 
-  const [backendSkills, setBackendSkills] = useState([
+  const backendSkills = [
     {
       label: "Node.js",
       icon: 
@@ -197,7 +194,7 @@ const SkillSection = () => {
             </svg>
           
     },
-  ]);
+  ];
 
   return (
     <section className="w-full bg-background flex flex-col gap-6 pt-6 pb-8">

@@ -34,7 +34,7 @@ const HomeLandingSection = () => {
         </h1>
 
         <h4 className="w-full md:w-[65%] leading-6 md:leading-7 text-lg md:text-2xl z-10 px-6 md:px-16">
-          Currently a Junior Software Engineer, crafting the design and user experience for native products. I'm always looking for new opportunities to learn and grow.
+          Currently a Junior Software Engineer, crafting the design and user experience for native products. I&apos;m always looking for new opportunities to learn and grow.
         </h4>
       </div>
     </section>

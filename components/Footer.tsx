@@ -34,7 +34,7 @@ const Footer = () => {
         <div className="md:w-[35%] flex flex-col gap-6">
           <div className="w-full flex flex-col">
             <h1 className="text-3xl md:text-4xl">
-              Let's talk
+              Let&apos;s talk
             </h1>
             <Link href="/contact" className="flex gap-2 items-center group hover:text-primary/50 transition-all duration-500 ease-out w-fit cursor-pointer">
               <h3 className="text-4xl md:text-5xl">

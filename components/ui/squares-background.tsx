@@ -24,6 +24,7 @@ export function Squares({
   const numSquaresX = useRef<number>(null)
   const numSquaresY = useRef<number>(null)
   const gridOffset = useRef({ x: 0, y: 0 })
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [hoveredSquare, setHoveredSquare] = useState<{
     x: number
     y: number

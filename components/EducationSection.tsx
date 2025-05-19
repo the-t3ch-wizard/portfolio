@@ -1,12 +1,9 @@
-"use client"
-
-import { useState } from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { MagicCard } from "@/components/ui/magic-card";
 
 const EducationSection = () => {
 
-  const [education, setEducation] = useState([
+  const education = [
     {
       id: 1,
       institute: "Technocrats Institute of Technology",
@@ -19,7 +16,7 @@ const EducationSection = () => {
       marks: "80%",
       logo: "/rgpv-logo.png"
     },
-  ]);
+  ];
 
   return (
     <section className="w-full bg-background flex flex-col gap-6 pt-6 pb-8">

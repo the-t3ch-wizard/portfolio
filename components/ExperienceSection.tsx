@@ -1,6 +1,3 @@
-"use client"
-
-import { useState } from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   Accordion,
@@ -12,7 +9,7 @@ import { MagicCard } from "@/components/ui/magic-card";
 
 const ExperienceSection = () => {
 
-  const [experiences, setExperiences] = useState([
+  const experiences = [
     {
       "id": 2,
       "company": "Capgemini",
@@ -42,7 +39,7 @@ const ExperienceSection = () => {
         "Gained extensive experience by migrating, optimizing, and improving backend services."
       ]
     }
-  ]);
+  ];
 
   return (
     <section className="w-full bg-background flex flex-col gap-6 pt-6 pb-8">
@@ -90,9 +87,9 @@ const ExperienceSection = () => {
                 <div className="w-full flex flex-col gap-2">
                   {
                     experience.responsibilities.map((responsibility, index) => (
-                      <div className="flex gap-2 items-center">
+                      <div className="flex gap-2 items-center" key={index}>
                         -
-                        <p key={index} className="text-primary/90 md:text-base leading-5 md:leading-7">
+                        <p className="text-primary/90 md:text-base leading-5 md:leading-7">
                           {responsibility}
                         </p>
                       </div>
