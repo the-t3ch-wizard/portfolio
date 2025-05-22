@@ -16,16 +16,17 @@ const GithubContributionSection = () => {
       </h3>
 
       <div className="flex flex-col justify-center items-center gap-3 px-2 md:px-[6.5rem]">
-        <GitHubCalendar username="the-t3ch-wizard" blockSize={12} fontSize={16} theme={{
-            "light": [
-              "hsl(0, 0%, 92%)",
-              "oklch(0.97 0 0)"
-            ],
-            "dark": [
-              "oklch(0.269 0 0)",
-              "oklch(1 0 0)"
-            ]
-          }}
+        <GitHubCalendar username="the-t3ch-wizard" blockSize={12} fontSize={16} 
+        // theme={{
+        //     "light": [
+        //       "hsl(0, 0%, 92%)",
+        //       "oklch(0.97 0 0)"
+        //     ],
+        //     "dark": [
+        //       "oklch(0.269 0 0)",
+        //       "oklch(1 0 0)"
+        //     ]
+        //   }}
         />
       </div>
 
