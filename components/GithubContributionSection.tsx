@@ -15,7 +15,7 @@ const GithubContributionSection = () => {
         Github Contributions
       </h3>
 
-      <div className="flex flex-col justify-center items-center gap-3 px-2 md:px-[6.5rem]">
+      <div className="flex flex-col justify-center items-center gap-3 px-4 md:px-[6.5rem]">
         <GitHubCalendar username="the-t3ch-wizard" blockSize={12} fontSize={16} 
         // theme={{
         //     "light": [
