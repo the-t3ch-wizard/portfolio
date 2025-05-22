@@ -11,11 +11,15 @@ import Logo from "@/components/logo"
 export default function Navbar() {
   const [isVisible, setIsVisible] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
+  const [isAtTop, setIsAtTop] = useState(true)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     const controlNavbar = () => {
       if (typeof window !== "undefined") {
+        // Check if we're at the top
+        setIsAtTop(window.scrollY < 10)
+        
         // If we're scrolling down, hide the navbar
         if (window.scrollY > lastScrollY && window.scrollY > 80) {
           setIsVisible(false)
@@ -42,8 +46,9 @@ export default function Navbar() {
   return (
     <header
       className={cn(
-        "fixed px-5 md:px-16 top-0 left-0 right-0 z-50 shadow-sm transition-transform duration-300 ease-in-out bg-clip-padding backdrop-filter backdrop-blur-sm",
+        "fixed px-5 md:px-16 top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out",
         isVisible ? "translate-y-0" : "-translate-y-full",
+        isAtTop ? "bg-transparent" : "shadow-sm bg-clip-padding backdrop-filter backdrop-blur-sm"
       )}
     >
       <div className="container py-4 flex items-center justify-between">
